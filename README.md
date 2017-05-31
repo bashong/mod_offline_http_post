@@ -1,5 +1,7 @@
-Ejabberd 16.08 module to send offline user's message via POST request to target URL.
+Ejabberd 16.* and 17.* module to send offline user's message via POST request to target URL.
 The main motivation for this module is to use it with push notifications. The request body is in JSON format. See the example below.
+
+Tested with eJabberd 17.04.
 
 
 Installation
@@ -18,6 +20,7 @@ Add the following to ejabberd configuration under `modules:`
 ```
 mod_offline_http_post:
     auth_token: "secret"
+    auth_token_key: "access_token"
     post_url: "http://example.com/notify"
 ```
 
