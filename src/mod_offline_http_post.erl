@@ -7,7 +7,7 @@
 
 -export([start/2, stop/1, create_message/1, create_message/3]).
 
--include("ejabberd.hrl").
+%%  -include("ejabberd.hrl").
 -include("xmpp.hrl").
 -include("logger.hrl").
 
